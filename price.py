@@ -2,7 +2,7 @@
 import math
 from scipy.stats import norm
 
-def calloption(S0,X,t,σ="",r=6.5,q=0.0,td=365):
+def calloption(S0,X,t,σ="",r=10,q=0.0,td=365):
 
   #if(σ==""):σ =indiavix()
   S0,X,σ,r,q,t = float(S0),float(X),float(σ/100),float(r/100),float(q/100),float(t/td)
@@ -20,7 +20,7 @@ def calloption(S0,X,t,σ="",r=6.5,q=0.0,td=365):
 
   return round(call_premium,2)
 
-def putoption(S0,X,t,σ="",r=6.5,q=0.0,td=365):
+def putoption(S0,X,t,σ="",r=10,q=0.0,td=365):
 
   #if(σ==""):σ =indiavix()
   S0,X,σ,r,q,t = float(S0),float(X),float(σ/100),float(r/100),float(q/100),float(t/td)
